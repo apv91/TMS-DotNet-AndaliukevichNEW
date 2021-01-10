@@ -6,7 +6,18 @@ namespace Homework2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Введите дату для определения дня недели:");
+            string selection = Console.ReadLine();
+            bool dayweek = DateTime.TryParse(selection, out DateTime date);
+            if (dayweek)
+            {
+                Console.WriteLine(date.DayOfWeek);
+            }
+            else
+            {
+                Console.WriteLine("Неправильная дата!");
+            }
+            Console.ReadLine();
         }
     }
 }
