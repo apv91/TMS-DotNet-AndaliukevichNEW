@@ -15,7 +15,7 @@ namespace Homework2
             }
             else
             {
-                Console.WriteLine("Неправильная дата!");
+                Console.WriteLine("Неправильная дата! Введите дату в формате dd mm yyyy");
             }
             Console.ReadLine();
         }
